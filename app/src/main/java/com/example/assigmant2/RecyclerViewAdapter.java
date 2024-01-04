@@ -39,7 +39,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<DataVH> {
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Data item = list.get(position);
+                 Data item = list.get(position);
                 Intent intent = new Intent(context, MainActivity2.class);
                 intent.putExtra("foodName", item.getfName());
                 intent.putExtra("foodDetiles", item.getDetiles());
